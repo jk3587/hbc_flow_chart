@@ -6,7 +6,9 @@ custom_mark10
   digraph G {
     size ="4,4"
     q1 [shape=box label="does it have goat cheese and figs?"]
-    yes [label="hbc approved" color=green] 
+    yes [label="it's the best" fontcolor=blue] 
+    yes -> hbc_approved [weight=8]
+    hbc_approved [shape=box label="hbc approved" fontcolor=green]
     q1 -> yes [weight=8 label="yes"]
     q1 -> q2 [weight=8 label="no"]
     q2 [shape=box label="is it from 1618?"]
@@ -15,7 +17,7 @@ custom_mark10
     q3 [shape=box label="is it that indian place from San Marcos?"]
     q3 -> yes [weight=8 label="yes"]
     q3 -> no [weight=8 label="no"]
-    no [shape=box label="further questions required" color=red]
+    no [shape=box label="further questions required" fontcolor=red]
   }
 custom_mark10
 </details>
